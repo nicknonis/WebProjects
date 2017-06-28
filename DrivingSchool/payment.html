@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title> RD Driving School</title>
+	
+	<!-- linked objects -->
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/bootstrap-theme.css"/>
+	<link rel="stylesheet" href="css/theme.css"/>
+
+</head>
+
+
+ <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RD Driving School</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+		  
+         	<li ><a href="index.html">Home</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+            <li ><a href="booking.html">Booking</a></li>
+			<li class="active"><a href="#paymnent">Payment</a></li>
+			<li ><a href="feedback.html">Feedback</a></li>
+			<li ><a href="login.html">Logout</a></li>
+			
+			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+   </nav>
+	
+<body>
+<div class="container ">
+	<div id="payment">
+	<div class="page-header">
+	  <h1>Payment<small>Please fill up the form</small></h1>
+	</div>
+	<div class="input-group input-group-lg">
+	  <span class="input-group-addon" id="sizing-addon1">Student ID</span>
+	  <input type="text" class="form-control" placeholder="eg. 541231" aria-describedby="sizing-addon1">
+	</div>
+	<br><br>
+	<div class="input-group input-group-lg">
+	  <span class="input-group-addon" id="sizing-addon1">Name</span>
+	  <input type="text" class="form-control" placeholder="Kappa Ng" aria-describedby="sizing-addon1">
+	</div>
+	<br><br>
+	<ol class="breadcrumb">
+	  <li class="active"><b>Payment method<b></li>
+	</ol>
+	<div class="btn-group">
+	  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Select payment method <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+		
+	  </ul>
+	</div>
+	<br><br>
+	<div class="input-group input-group-lg">
+	  <span class="input-group-addon" id="sizing-addon1">Amount</span>
+	  <input type="text" class="form-control" placeholder="RM500.00" aria-describedby="sizing-addon1">
+	</div>
+	<br><br>
+
+	
+			<ol class="breadcrumb">
+	  <li class="active"><b>Select instructor you have worked with<b></li>
+	</ol>
+	<div class="btn-group">
+	  <button class="btn btn-default btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		Select instructor <span class="caret"></span>
+	  </button>
+	  <ul class="dropdown-menu">
+		
+	  </ul>
+	</div>
+	<br><br>
+	<div class="btn-group" role="group" aria-label="...">
+	  <button type="button" class="btn btn-default" onClick="$('#payment').hide();$('#receipt').show()" href="#">Submit</button>
+	  <button type="button" class="btn btn-default">Reset</button>
+	</div>
+	</div>
+	<div id="receipt" style="display:none; margin-top:50px" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <div class="panel-title">Receipt</div>
+                           
+						   
+                        </div>  
+                        <div class="panel-body" >
+							<div class="jumbotron">
+								<p> Student ID: 123456<br>
+									Name: Kappa Ng <br>
+									Payment Method: Bank Transfer <br>
+									Amount: RM 500.00 <br>
+									Instructor: Instructor X <br>
+									STATUS: Successful! <br>
+									</p>
+								
+							</div>
+
+                              
+                      
+                         </div>
+                    </div>
+         </div> 
+		  
+									
+                         
+        
+</div>	
+
+<script src="js/jq.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+
+</html>

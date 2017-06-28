@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<title> RD Driving School </title>
+	
+	<!-- linked objects -->
+	<link rel="stylesheet" href="css/bootstrap.css"/>
+	<link rel="stylesheet" href="css/bootstrap-theme.css"/>
+	<link rel="stylesheet" href="css/theme.css"/>
+	<script src="js/js.js" type="text/javascript"></script>
+
+</head>
+
+
+ <!-- Fixed navbar -->
+   <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">RD Driving School</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+		<li ><a href="index.html">Home</a></li>
+            <li ><a href="contact.html">Contact</a></li>
+            <li ><a href="booking.html">Booking</a></li>
+			<li><a href="payment.html">Payment</a></li>
+			<li class="active"><a href="feedback.html">Feedback</a></li>
+			<li ><a href="login.html">Logout</a></li>
+			
+			
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+   </nav>
+	
+<body>
+
+    <div class="container">    
+        <div id="feedbox" style="margin-top:50px;" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">                    
+            <div class="panel panel-primary" >
+                    <div class="panel-heading">
+                        <div class="panel-title">Feedback</div>
+                        <div style="float:right; font-size: 80%; position: relative; top:-10px"></div>
+                    </div>     
+
+                    <div style="padding-top:30px" class="panel-body" >
+
+                        <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+                            
+                        <form id="feedform" class="form-horizontal" role="form" name="feedform" action="index.html" method="POST" onSubmit="return feedconf()">
+                                    
+								<div class="form-group">
+                                    <label for="fback" class="col-md-4 control-label">Feedback Type</label>
+                                    <div class="col-md-8">
+										
+										
+                                        <select class="form-control" id="sel1" name="state" >
+										
+											<option value="ife" >Instructor Feedback</option>
+											<option value="sfdk" >Staff Feedback</option>
+											<option value="sf" >Service Feedback</option>
+											<option value="marah" >Complaint</option>
+										
+										
+										</select>
+										
+                                    </div>
+                                </div>
+								
+								<div class="form-group">
+                                    <label for="message" class="col-md-4 control-label">Message</label>
+                                    <div class="col-md-8">
+                                       <textarea name="feedbackmsg" id="feedbackmsg" class="form-control" row="15" required></textarea>
+                                    </div>
+                                </div>
+                                    
+
+                                <div style="margin-top:10px" class="form-group">
+								
+                                    <!-- Button -->
+
+                                    <div class="col-sm-12 controls">
+                                      <button type="submit" form="feedform" value="Submit" class="btn btn-success">Submit</button>
+
+                                    </div>
+                                </div>
+
+
+                              
+                        </form>     
+                    </div>                     
+            </div>  
+        </div>
+       
+
+               
+               
+                
+        
+    </div>
+    
+	
+</div>
+	
+<script src="js/jq.js"></script>
+<script src="js/bootstrap.js"></script>
+</body>
+
+</html>
